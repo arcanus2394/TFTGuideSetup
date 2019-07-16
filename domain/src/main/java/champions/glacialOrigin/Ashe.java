@@ -1,7 +1,14 @@
 package champions.glacialOrigin;
 
-import origins.Glacial;
+import champions.Champion;
+import champions.classes.Ranger;
+import champions.origins.Glacial;
 
-public class Ashe implements Glacial {
+import java.util.Collections;
 
+public class Ashe extends Champion {
+
+    public Ashe() {
+        super(Collections.singletonList(new Glacial()),Collections.singletonList( new Ranger()));
+    }
 }

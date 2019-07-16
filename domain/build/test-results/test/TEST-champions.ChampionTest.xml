@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="champions.glacialOrigin.AsheTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-07-15T16:48:56" hostname="CO-IT005034" time="0.015">
+<testsuite name="champions.ChampionTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-07-16T21:08:28" hostname="CO-IT005034" time="0.018">
   <properties/>
-  <testcase name="asheShouldNotBeCreatedWithAnotherOrigin()" classname="champions.glacialOrigin.AsheTest" time="0.015">
-    <failure message="org.opentest4j.AssertionFailedError: Expected java.lang.Exception to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.lang.Exception to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:69)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:36)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:1179)
-	at champions.glacialOrigin.AsheTest.asheShouldNotBeCreatedWithAnotherOrigin(AsheTest.java:20)
+  <testcase name="aChampionShouldHaveOriginsAndClasses()" classname="champions.ChampionTest" time="0.018">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;[champions.origins.Glacial@62019654]&gt; but was: &lt;[champions.origins.Glacial@1f83f129]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;[champions.origins.Glacial@62019654]&gt; but was: &lt;[champions.origins.Glacial@1f83f129]&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
+	at champions.ChampionTest.aChampionShouldHaveOriginsAndClasses(ChampionTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

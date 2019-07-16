@@ -1,28 +1,24 @@
 package champions;
 
+import champions.classes.ChampionClass;
+import io.vavr.Tuple2;
+import javafx.util.Pair;
+import champions.origins.ChampionOrigin;
+
+import java.util.List;
+
 public abstract class Champion {
 
-    public Champion(Origin origin, ChampionClass championClass){
+    private List<ChampionOrigin> origins;
+    private List<ChampionClass> championClass;
 
+    public Champion(List<ChampionOrigin> origins, List<ChampionClass> championClass) {
+        this.origins = origins;
+        this.championClass = championClass;
     }
 
-    private Passive origin;
-    private Passive classChampion;
-
-    public Passive getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(Passive origin) {
-        this.origin = origin;
-    }
-
-    public Passive getClassChampion() {
-        return classChampion;
-    }
-
-    public void setClassChampion(Passive classChampion) {
-        this.classChampion = classChampion;
+    public Tuple2<List<ChampionOrigin>, List<ChampionClass>> getChampionAttributes() {
+        return new Tuple2<>(origins, championClass);
     }
 
 }

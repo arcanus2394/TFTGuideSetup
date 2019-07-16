@@ -1,9 +1,14 @@
 package champions.glacialOrigin;
 
-import classes.Guardian;
-import origins.Glacial;
+import champions.Champion;
+import champions.classes.Guardian;
+import champions.origins.Glacial;
 
-public class Braum implements Glacial {
+import java.util.Collections;
 
+public class Braum extends Champion {
 
+    public Braum() {
+        super(Collections.singletonList(new Glacial()), Collections.singletonList(new Guardian()));
+    }
 }
