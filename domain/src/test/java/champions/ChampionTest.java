@@ -29,4 +29,6 @@ public class ChampionTest {
         Assertions.assertEquals(origins,champion.getChampionAttributes()._1());
     }
 
+
+
 }
