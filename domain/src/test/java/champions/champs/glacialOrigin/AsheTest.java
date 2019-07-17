@@ -1,10 +1,7 @@
-package champions.glacialOrigin;
-import champions.origins.ChampionOrigin;
+package champions.champs.glacialOrigin;
 import champions.origins.Glacial;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 
 public class AsheTest {

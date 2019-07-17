@@ -1,4 +1,4 @@
-package champions.glacialOrigin;
+package champions.champs.glacialOrigin;
 
 import champions.Champion;
 import champions.classes.Guardian;
@@ -10,5 +10,6 @@ public class Braum extends Champion {
 
     public Braum() {
         super(Collections.singletonList(new Glacial()), Collections.singletonList(new Guardian()));
+        setName("Braum");
     }
 }

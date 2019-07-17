@@ -3,7 +3,7 @@ package champions.classes;
 public class Knight extends ChampionClass {
 
     public Knight(){
-        setNAME("KNIGHT");
+        setName("KNIGHT");
     }
 
     @Override

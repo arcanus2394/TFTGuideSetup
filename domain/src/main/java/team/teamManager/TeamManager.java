@@ -1,9 +1,8 @@
-package champions.teamManager;
+package team.teamManager;
 
 import champions.Champion;
 import champions.classes.ChampionClass;
 import champions.origins.ChampionOrigin;
-import javafx.util.Pair;
 
 import java.util.List;
 import java.util.Map;
@@ -29,6 +28,7 @@ public class TeamManager {
 
     public Map<ChampionOrigin, Long> calculateOriginPassives(List<Champion> passives) {
         return passives.stream()
+                .distinct()
                 .flatMap(champion -> champion.getChampionAttributes()._1()
                         .stream())
                 .collect(Collectors.groupingBy(e -> e, Collectors.counting()));
@@ -36,6 +36,7 @@ public class TeamManager {
 
     public Map<ChampionClass, Long> calculateClassespassive(List<Champion> passives) {
         return passives.stream()
+                .distinct()
                 .flatMap(champion -> champion.getChampionAttributes()._2()
                         .stream())
                 .collect(Collectors.groupingBy(e -> e, Collectors.counting()));

@@ -1,11 +1,9 @@
 package champions;
 
-import champions.glacialOrigin.Anivia;
-import champions.glacialOrigin.Ashe;
-import champions.glacialOrigin.Braum;
-import champions.teamManager.TeamManager;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import org.junit.jupiter.api.Assertions;
+import champions.champs.glacialOrigin.Anivia;
+import champions.champs.glacialOrigin.Ashe;
+import champions.champs.glacialOrigin.Braum;
+import team.teamManager.TeamManager;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

@@ -3,7 +3,7 @@ package champions.classes;
 public class Guardian extends ChampionClass {
 
     public Guardian(){
-        setNAME("GUARDIAN");
+        setName("GUARDIAN");
     }
 
     public String applyPassiveLv1() {

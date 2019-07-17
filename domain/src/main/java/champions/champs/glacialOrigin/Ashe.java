@@ -1,4 +1,4 @@
-package champions.glacialOrigin;
+package champions.champs.glacialOrigin;
 
 import champions.Champion;
 import champions.classes.Ranger;
@@ -10,5 +10,6 @@ public class Ashe extends Champion {
 
     public Ashe() {
         super(Collections.singletonList(new Glacial()),Collections.singletonList( new Ranger()));
+        setName("Ashe");
     }
 }

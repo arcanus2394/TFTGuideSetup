@@ -3,7 +3,7 @@ package champions.classes;
 public class Ranger extends ChampionClass {
 
     public Ranger(){
-        setNAME("RANGER");
+        setName("RANGER");
     }
 
     @Override
@@ -21,22 +21,4 @@ public class Ranger extends ChampionClass {
     public String applyPassiveLv3() {
         return null;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        return "RANGER".hashCode();
-    }
-
-/*    @Override
-    public String toString(){
-        return "RANGER";
-    }*/
 }

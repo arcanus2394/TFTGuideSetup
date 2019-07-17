@@ -3,7 +3,7 @@ package champions.origins;
 public class Glacial extends ChampionOrigin {
 
     public Glacial(){
-        setNAME("GLACIAL");
+        setName("GLACIAL");
     }
 
     public String applyPassiveLv1() {
