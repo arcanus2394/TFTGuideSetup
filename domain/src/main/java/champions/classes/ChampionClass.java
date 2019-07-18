@@ -4,19 +4,9 @@ import champions.Passive;
 
 public abstract class ChampionClass implements Passive {
 
-    private String name;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
     @Override
     public String toString() {
-        return name;
+        return this.getClass().getSimpleName();
     }
 
     @Override
@@ -29,6 +19,6 @@ public abstract class ChampionClass implements Passive {
 
     @Override
     public int hashCode() {
-        return getName().hashCode();
+        return this.getClass().getSimpleName().hashCode();
     }
 }

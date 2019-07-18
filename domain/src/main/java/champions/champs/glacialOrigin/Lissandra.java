@@ -9,6 +9,5 @@ import java.util.Collections;
 public class Lissandra extends Champion {
     public Lissandra() {
         super(Collections.singletonList(new Glacial()), Collections.singletonList(new Elementalist()));
-        setName("Lissandra");
     }
 }

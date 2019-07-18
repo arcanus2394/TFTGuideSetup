@@ -2,10 +2,6 @@ package champions.classes;
 
 public class Elementalist extends ChampionClass {
 
-    public Elementalist(){
-        setName("ELEMENTALIST");
-    }
-
     @Override
     public String applyPassiveLv1() {
         return "Elementalists gain double mana from attacks.\n" +

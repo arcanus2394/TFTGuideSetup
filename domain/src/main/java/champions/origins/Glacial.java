@@ -2,10 +2,7 @@ package champions.origins;
 
 public class Glacial extends ChampionOrigin {
 
-    public Glacial(){
-        setName("GLACIAL");
-    }
-
+    @Override
     public String applyPassiveLv1() {
         return "Attacks from glacials have a chance of stun for 2s. 20% Chance to Stun";
     }

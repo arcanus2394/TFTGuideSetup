@@ -2,10 +2,6 @@ package champions.classes;
 
 public class Brawler extends ChampionClass {
 
-    public Brawler(){
-        setName("BRAWLER");
-    }
-
     @Override
     public String applyPassiveLv1() {
         return "300 Bonus Health";

@@ -16,8 +16,7 @@ public class TeamManagerTest {
 
         List<Champion> champions = Arrays.asList(new Ashe(),new Braum(),new Anivia());
         TeamManager teamManager = new TeamManager();
-        teamManager.calculateOriginPassives(champions)
-                .forEach((champion,number)-> System.out.println(champion.getName()+" = "+number));
+        System.out.println(teamManager.calculateOriginPassives(champions));
     }
 
     @Test

@@ -7,7 +7,6 @@ import io.vavr.Tuple2;
 import java.util.List;
 
 public abstract class Champion {
-    private String name;
     private List<ChampionOrigin> origins;
     private List<ChampionClass> championClass;
 
@@ -20,17 +19,10 @@ public abstract class Champion {
         return new Tuple2<>(origins, championClass);
     }
 
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
 
     @Override
     public String toString() {
-        return name;
+        return this.getClass().getSimpleName();
     }
 
     @Override
@@ -43,6 +35,6 @@ public abstract class Champion {
 
     @Override
     public int hashCode() {
-        return getName().hashCode();
+        return this.getClass().getSimpleName().hashCode();
     }
 }

@@ -3,19 +3,10 @@ package champions.origins;
 import champions.Passive;
 
 public abstract class ChampionOrigin implements Passive {
-    private String name;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
 
     @Override
     public String toString() {
-        return name;
+        return this.getClass().getSimpleName();
     }
 
     @Override
@@ -28,7 +19,7 @@ public abstract class ChampionOrigin implements Passive {
 
     @Override
     public int hashCode() {
-        return getName().hashCode();
+        return this.getClass().getSimpleName().hashCode();
     }
 
 }

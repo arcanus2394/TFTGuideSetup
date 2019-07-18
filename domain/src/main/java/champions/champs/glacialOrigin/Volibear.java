@@ -9,6 +9,5 @@ import java.util.Collections;
 public class Volibear extends Champion {
     public Volibear() {
         super(Collections.singletonList(new Glacial()), Collections.singletonList(new Brawler()));
-        setName("Volibear");
     }
 }

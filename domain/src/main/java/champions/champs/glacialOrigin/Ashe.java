@@ -10,6 +10,5 @@ public class Ashe extends Champion {
 
     public Ashe() {
         super(Collections.singletonList(new Glacial()),Collections.singletonList( new Ranger()));
-        setName("Ashe");
     }
 }

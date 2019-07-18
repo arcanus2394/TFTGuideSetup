@@ -9,6 +9,5 @@ import java.util.Collections;
 public class Anivia extends Champion {
     public Anivia() {
         super(Collections.singletonList(new Glacial()),Collections.singletonList( new Elementalist()));
-        setName("Anivia");
     }
 }

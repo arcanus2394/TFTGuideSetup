@@ -10,6 +10,5 @@ public class Braum extends Champion {
 
     public Braum() {
         super(Collections.singletonList(new Glacial()), Collections.singletonList(new Guardian()));
-        setName("Braum");
     }
 }

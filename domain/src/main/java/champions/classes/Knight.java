@@ -2,10 +2,6 @@ package champions.classes;
 
 public class Knight extends ChampionClass {
 
-    public Knight(){
-        setName("KNIGHT");
-    }
-
     @Override
     public String applyPassiveLv1() {
         return "20 Damage Blocked";

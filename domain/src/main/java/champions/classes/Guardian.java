@@ -2,10 +2,6 @@ package champions.classes;
 
 public class Guardian extends ChampionClass {
 
-    public Guardian(){
-        setName("GUARDIAN");
-    }
-
     public String applyPassiveLv1() {
         return "At the start of combat, all Guardians and adjacent allies receive +40 armor.";
     }
